@@ -30,7 +30,7 @@ public class Main {
         }
 
         System.out.println("App was started. Enter '" + KEYWORD_FOR_EXIT + "' to exit.");
-        System.out.println("Enter new line...");
+        System.out.println("Enter name or '--all'...");
         try (Scanner sc = new Scanner(System.in);) {
             while (sc.hasNextLine()) {
                 String command = sc.nextLine();
@@ -41,7 +41,7 @@ public class Main {
                 } else {
                     printMessagesByAuthor(command);
                 }
-                System.out.println("Enter new line...");
+                System.out.println("Enter name or '--all'...");
             }
         }
         System.out.println("App was stopped");
